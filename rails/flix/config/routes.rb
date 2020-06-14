@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :genres
   resources :users
   get '/signin', to: 'sessions#new'
   resource :session, only: [:new, :create, :destroy]
